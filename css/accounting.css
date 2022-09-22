@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.container input {
+    outline: 0;
+}
+.accounting__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.burn__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.burn__area button {
+    transition: 0.3s;
+}
+.burn__area button:hover {
+    background-color: rgb(40, 124, 124);
+}
+.accounting__area h2 {
+    display: block;
+}
+.saving__area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+.saving__area button {
+    transition: 0.3s;
+}
+.saving__area button:hover {
+    background-color: rgb(40, 124, 124);
+}
+.balance__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.expenses__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Money Heist - Homepage</title>
+
+        <!-- link -->
+        <script
+            src="https://kit.fontawesome.com/697c0af9d0.js"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="css/accounting.css" />
+    </head>
+    <body>
+        <section class="bg-gradient-to-r from-teal-900 to-teal-700 text-white">
+            <h1
+                class="text-center text-white text-3xl uppercase tracking-wider font-bold pt-24">
+                Money Heist Co.
+            </h1>
+
+            <!-- income area -->
+
+            <div
+                class="container bg-gradient-to-r from-teal-800 to-teal-700 w-2/4 m-auto rounded-lg">
+                <div class="accounting__area text-center w-1/3 m-auto">
+                    <h2 class="text-2xl font-bold pb-2 mt-4">Income</h2>
+                    <div class="earn__area grid grid-cols-2 pb-8">
+                        <label class="text-start py-2 text-lg">Income: </label>
+                        <input
+                            id="income-input"
+                            class="bg-teal-600 p-2 rounded-lg"
+                            type="text" />
+                    </div>
+
+                    <!-- expense area -->
+
+                    <div class="burn__area pb-8">
+                        <h2 class="text-2xl font-bold pb-2">
+                            Expenses and Cost
+                        </h2>
+                        <div class="text-start food__burn grid grid-cols-2">
+                            <label class="py-2 text-lg">Food: </label>
+                            <input
+                                id="food-input"
+                                class="p-2 bg-teal-600 rounded-lg"
+                                type="text" />
+                        </div>
+                        <div class="text-start house__burn grid grid-cols-2">
+                            <label class="py-2 text-lg">House Rent: </label>
+                            <input
+                                id="rent-input"
+                                class="p-2 bg-teal-600 rounded-lg"
+                                type="text" />
+                        </div>
+                        <div class="text-start clothes__burn grid grid-cols-2">
+                            <label class="py-2 text-lg">Clothes: </label>
+                            <input
+                                id="clothes-input"
+                                class="p-2 bg-teal-600 rounded-lg"
+                                type="text" />
+                        </div>
+                        <button
+                            id="expense-btn"
+                            class="font-bold uppercase tracking-wider bg-teal-800 py-2 px-32 rounded-lg">
+                            Submit
+                        </button>
+                    </div>
+
+                    <!-- total expenses -->
+
+                    <div class="expenses__total">
+                        <h3 class="font-bold text-xl">
+                            Expense:
+                            <span
+                                id="expense"
+                                class="tracking-widest text-yellow-500"
+                                >000</span
+                            >
+                        </h3>
+                        <h3 class="font-bold text-xl">
+                            Balance:
+                            <span
+                                id="balance"
+                                class="tracking-widest text-yellow-500"
+                                >000</span
+                            >
+                        </h3>
+                    </div>
+
+                    <!-- saving total -->
+
+                    <div class="saving__area py-8">
+                        <label class="py-2 text-lg">Save: </label>
+                        <input
+                            id="saving-input"
+                            class="w-1/2 p-2 bg-teal-600 rounded-lg"
+                            type="text" />
+                        <p class="font-bold text-3xl">%</p>
+                        <button
+                            id="saving-btn"
+                            class="saving__btn font-bold uppercase tracking-wider bg-teal-800 py-2 px-8 rounded-lg">
+                            Save
+                        </button>
+                    </div>
+
+                    <!-- balance total -->
+
+                    <div class="balance__total pb-4">
+                        <h3 class="font-bold text-xl">
+                            Savings:
+                            <span
+                                id="savings"
+                                class="tracking-widest text-yellow-500"
+                                >000</span
+                            >
+                        </h3>
+                        <h3 class="font-bold text-xl">
+                            Remaining:
+                            <span
+                                id="remaining"
+                                class="tracking-widest text-yellow-500"
+                                >000</span
+                            >
+                        </h3>
+                    </div>
+                </div>
+                <div class="logout p-4 text-center">
+                    <button
+                        id="logout"
+                        class="saving__btn font-bold uppercase tracking-wider bg-rose-800 py-2 px-8 rounded-lg">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- script -->
+        <script src="js/accounting.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(6, 105, 144);
+    position: relative;
+}
+.container {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+.container input {
+    outline: 0;
+    transition: 0.2s;
+}
+.container input:hover {
+    outline: 1px solid white;
+}
+
+.container button {
+    transition: 0.3s;
+}
