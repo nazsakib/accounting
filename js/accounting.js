@@ -33,13 +33,17 @@ document.getElementById("saving-btn").addEventListener("click", function () {
     const clothesInput = document.getElementById("clothes-input").value;
 
     const expenseTotal =
-        parseInt(foodInput) + parseInt(rentInput) + parseInt(clothesInput);
+        parseFloat(foodInput) +
+        parseFloat(rentInput) +
+        parseFloat(clothesInput);
 
     const salaryRemaining = incomeInput - expenseTotal;
-    const totalSaved = salaryRemaining / savingInput;
-    document.getElementById("savings").innerText = parseInt(totalSaved);
-    document.getElementById("remaining").innerText =
-        parseInt(salaryRemaining) - parseInt(totalSaved);
+
+    const totalSaved = (savingInput / 100) * salaryRemaining;
+
+    document.getElementById("savings").innerText = totalSaved;
+    const remaining = document.getElementById("remaining");
+    remaining.innerText = salaryRemaining - totalSaved;
 });
 
 // logout to the login page
