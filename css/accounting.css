@@ -9,11 +9,15 @@ section {
 }
 .container {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 25%;
 }
 .container input {
     outline: 0;
+    color: white;
+}
+.container button {
+    color: white;
 }
 .accounting__area {
     display: flex;
